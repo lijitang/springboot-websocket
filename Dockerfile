@@ -1,6 +1,6 @@
 FROM maven:3.6-jdk-8-slim AS builder
 
-WORKDIR ./
+WORKDIR ./springboot-websocket
 RUN mvn clean install
 
 FROM java:8
