@@ -1,3 +1,8 @@
+FROM maven:3.6-jdk-8-slim AS builder
+
+WORKDIR ./
+RUN mvn clean install
+
 FROM java:8
 VOLUME /tmp
 COPY springboot-websocket-0.0.1-SNAPSHOT.jar demo.jar
