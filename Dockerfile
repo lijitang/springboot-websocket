@@ -5,6 +5,7 @@ FROM maven:3.6-jdk-8-slim AS builder
 RUN ls /home
 RUN ls /opt
 RUN ls /usr
+RUN ls /tmp
 
 #RUN mvn clean install
 
