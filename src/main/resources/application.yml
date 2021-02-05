@@ -1,0 +1,17 @@
+#所有配置在spring-boot-autoconfigure-1.4.3.RELEASE.jar的 spring-configuration-metadata.json 中
+
+server:
+  port: 8090
+  servlet:
+    context-path: /
+
+spring:
+  mvc:
+    async:
+      request-timeout: 300000
+    #静态资源扫描
+    static-path-pattern: /static/**
+    
+logging:
+  config: classpath:logback.xml
+  
